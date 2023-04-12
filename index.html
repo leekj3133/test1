@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>나만의 중고마켓</title>
+    <link rel="stylesheet"
+        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        /* 꾸미기 */
+        .hero {
+            margin-bottom: 20px;
+            /* 원하는 공백의 크기를 설정하세요 */
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out;
+            /* 움직임의 부드러운 효과를 위한 트랜지션 속성 */
+        }
+
+        /* 마우스를 올렸을 때의 스타일 */
+        .card:hover {
+            transform: scale(1.05);
+            /* 1.05배 크기로 확대하는 스타일 */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="hero bg-dark text-center py-5">
+        <h1 class="text-white">나만의 마켓</h1>
+        <h2 class="text-white">집에 있는 물건을 팝니다!</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://source.unsplash.com/1600x900/?rice-cooker" class="card-img-top" alt="전기밥솥 이미지"
+                    onclick="openLink('https://spartacodingclub.kr')">
+                <div class="card-body">
+                    <h5 class="card-title">전기밥솥</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                    <p class="card-text">한 번 밖에 안쓴 전기밥솥 팝니다. 부모님이 독립 할 때 주신 거에요!</p>
+                    <a href="https://spartacodingclub.kr" target="_blank" class="card-link">스파르타코딩클럽 홈페이지로 이동</a>
+                </div>
+            </div>
+        </div>
+        <!-- Add two more cards with similar structure here -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://source.unsplash.com/1600x900/?electronics" class="card-img-top" alt="물건2 이미지"
+                    onclick="openLink('외부링크URL')">
+                <div class="card-body">
+                    <h5 class="card-title">물건2 제목</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">가격</h6>
+                    <p class="card-text">물건2 설명</p>
+                    <a href="외부링크URL" target="_blank" class="card-link">외부링크 텍스트</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://source.unsplash.com/1600x900/?electronics" class="card-img-top" alt="물건3 이미지"
+                    onclick="openLink('외부링크URL')">
+                <div class="card-body">
+                    <h5 class="card-title">물건3 제목</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">가격</h6>
+                    <p class="card-text">물건3 설명</p>
+                    <a href="외부링크URL" target="_blank" class="card-link">외부링크 텍스트</a>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-4">
+            <div class="card">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/chatGPT/%EC%B2%AD%EC%86%8C%EA%B8%B0.jpeg" class="card-img-top" alt="청소기 이미지"
+                    onclick="openLink('외부링크URL')">
+                <div class="card-body">
+                    <h5 class="card-title">청소기</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">25만원</h6>
+                    <p class="card-text">흡입력이 좋은 청소기</p>
+                    <a href="외부링크URL" target="_blank" class="card-link">외부링크 텍스트</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openLink(url) {
+            window.open(url, "_blank");
+        }
+    </script>
